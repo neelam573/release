@@ -10,5 +10,5 @@ COPY . .
 # Install necessary dependencies
 RUN pip install --no-cache-dir jinja2
 
-# Run the script and cat the release_notes.md file
+# Run the script and then cat the release_notes.md file
 CMD ["sh", "-c", "python generate_release_notes.py /usr/src/app && cat /usr/src/app/release_notes.md"]
